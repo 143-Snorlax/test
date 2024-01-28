@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" for="number">Age(optional) <input id="number" type="number" min="13" max="120" placeholder="Age" required/></label>
+        <p>Which option best describes your current role?</p> 
+        <select id="dropdown">
+          <option>Select One</option>
+          <option>Other</option>
+        </select>
+      </fieldset> 
+      <fieldset>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label> <input type="radio" name="recommend" value="1" class="inline"/> Definitely </label>
+        <label><input type="radio" name="recommend" value="2" class="inline"/> Probably</label>
+      </fieldset>
+      <fieldset>
+        <p>What do you like?</p>
+        <label id="checkbox"><input type="checkbox" name="front" value="1" class="inline"/> Front</label>
+        <label id="checkbox"><input type="checkbox" name="rear" value="2" class="inline"/> Rear</label>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="I like wingdings!" rows="3"></textarea>  
+      </fieldset>
+        <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
